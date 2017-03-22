@@ -14,11 +14,10 @@ addons:
     packages:
     - g++-4.8
 install:
-- npm install -g bower
-- npm install
+- npm install -g bower polymer-cli
 - bower install
 script: echo "Deploying!"
-before_deploy: npm run build
+before_deploy: polymer build
 deploy:
 - provider: firebase
   skip_cleanup: true
