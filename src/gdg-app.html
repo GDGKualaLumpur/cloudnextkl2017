@@ -217,9 +217,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <app-header condenses fixed effects="blend-background" >
           <app-toolbar>
               <div main-title></div>     
-              <!--<template is="dom-if" if="{{!app.general.ticket_soldout}}">
+              <template is="dom-if" if="{{!app.general.ticket_soldout}}">
                 <a rel="noopener" target="_blank" class="paper-button-link" href="{{app.general.ticket}}" tabindex="-1"><paper-button>Get Ticket</paper-button></a>
-              </template>-->
+              </template>
           </app-toolbar>
           <div class="header-flex"></div>
           <div class="header-nav">
@@ -240,14 +240,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </template>
             </paper-tabs>   
 
-            <paper-button style="background: #0288D1; color: #fff">Coming Soon</paper-button>
-
-            <!--<template is="dom-if" if="{{!app.general.ticket_soldout}}">
+            <template is="dom-if" if="{{!app.general.ticket_soldout}}">
               <a target="_blank" class="paper-button-link" href="{{app.general.ticket}}" tabindex="-1"><paper-button>Get Ticket</paper-button></a>
             </template>
             <template is="dom-if" if="{{app.general.ticket_soldout}}">
               <a target="_blank" class="paper-button-link" href="{{app.general.ticket}}" tabindex="-1"><paper-button style="background: #D32F2F; color: #fff">Sold Out</paper-button></a>
-            </template>-->
+            </template>
           </div>      
         </app-header>
 
