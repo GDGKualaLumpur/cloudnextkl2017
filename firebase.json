@@ -3,13 +3,26 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "/",
+    "public": "build/unbundled",
+    "rewrites": [
+      {
+        "source": "**/*",
+        "destination": "/index.html"
+      }
+    ],
     "headers": [{
       "source": "/",
       "headers": [{
         "key" : "Cache-Control",
         "value": "max-age=0"
       }]
-    }]
+    }],
+    "ignore": [
+      "/test/**",
+      "bower.json",
+      "database.rules.json",
+      "firebase.json",
+      "README.md"
+    ]
   }
 }
