@@ -111,7 +111,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       paper-tabs{
         margin: 0 24px;
-        width: 280px;
+        width: 400px;
         background: var(--text-primary-color);
         color: var(--primary-text-color);
         height: 64px;
@@ -213,6 +213,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         data="{{routeData}}"
         tail="{{subroute}}"></app-route>
 
+    <app-route
+        route="{{subroute}}"
+        pattern="/:id"
+        data="{{subrouteData}}">
+    </app-route>        
+
       <app-header-layout >
         <app-header condenses fixed effects="blend-background" >
           <app-toolbar>
@@ -257,7 +263,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               role="main">
             <gdg-home name="home" app="{{app}}"></gdg-home>
             <gdg-agenda name="agenda" app="{{app.agenda}}"></gdg-agenda>
-            <gdg-speakers name="speakers" app="{{app}}"></gdg-speakers>
+            <gdg-speakers name="speakers" route="{{subrouteData}}" detail="{{subroute}}" app="{{app}}"></gdg-speakers>
             <gdg-communityguidelines name="communityguidelines"></gdg-communityguidelines>
           </iron-pages>
           <footer><span>&copy; 2017 Based on <a rel="noopener" target="_blank" href="https://github.com/limhenry/samarium">Project Samarium</a> by <a rel="noopener" target="_blank" href="https://limhenry.xyz">Henry Lim</a></span></footer>
@@ -275,6 +281,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           reflectToAttribute: true,
           observer: '_pageChanged',
         },
+      },
+
+      listeners: {
+        'scrollPos': '_setScrollPos'
       },
 
       observers: [
