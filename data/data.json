@@ -49,61 +49,61 @@
             "speaker":""
          },
          {
-            "startTime":"10:25",
+            "startTime":"10:35",
             "AmPm":"AM",
             "title":"Intro to Google Developer Group Kuala Lumpur",
             "speaker":"Henry Lim"
          },
          {
-            "startTime":"10:30",
+            "startTime":"10:45",
             "AmPm":"AM",
             "title":"Opening Keynote",
             "speaker":"Bok Thye Yeow"
          },
          {
-            "startTime":"11:00",
+            "startTime":"11:15",
             "AmPm":"AM",
             "title":"Navigating Google Cloud Platform",
             "speaker":"Vin Lim"
          },
          {
-            "startTime":"11:45",
+            "startTime":"12:00",
             "AmPm":"AM",
             "title":"Multiplying the Power of Firebase Storage",
             "speaker":"Jirawat Karanwittayakarn"
          },
          {
-            "startTime":"12:30",
+            "startTime":"12:45",
             "AmPm":"PM",
             "title":"Lunch",
             "speaker":""
          },
          {
-            "startTime":"1:30",
+            "startTime":"1:45",
             "AmPm":"PM",
             "title":"Data Science on Google Cloud Platform",
             "speaker":"Ta Virot Chiraphadhanakul"
          },
          {
-            "startTime":"2:15",
+            "startTime":"2:30",
             "AmPm":"PM",
             "title":"IOT with Cloud Functions for Firebase",
             "speaker":"Lim Shang Yi"
          },
          {
-            "startTime":"3:00",
+            "startTime":"3:15",
             "AmPm":"PM",
             "title":"Break",
             "speaker":""
          },
          {
-            "startTime":"3:30",
+            "startTime":"3:45",
             "AmPm":"PM",
             "title":"Codelabs - Cloud Vision",
             "speaker":"Qamra Jema Khan"
          },
          {
-            "startTime":"4:15",
+            "startTime":"4:30",
             "AmPm":"PM",
             "title":"Closing and Photo Sessions",
             "speaker":""
